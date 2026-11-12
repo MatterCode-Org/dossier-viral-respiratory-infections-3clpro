@@ -1,0 +1,69 @@
+{
+  "stepsCount": 4,
+  "estimatedRouteCost": "$2.87 / gram",
+  "routeComplexityScore": "Low (SCScore: 2.6)",
+  "overallYieldPercent": 52.0,
+  "tree": [
+    {
+      "step": 1,
+      "reactionType": "Boc protection of primary amine",
+      "reactants": [
+        "N#CC1CCCN1C(=O)C(CCC(N)=O)NC(=O)Cc1ccc2ccccc2c1",
+        "(Boc)2O"
+      ],
+      "product": "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)=O)NC(=O)Cc1ccc2ccccc2c1",
+      "catalyst": "DMAP",
+      "solvent": "DCM",
+      "yieldEstimate": "92%",
+      "commercialCatalogId": "A1500620100",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$14.50"
+    },
+    {
+      "step": 2,
+      "reactionType": "Reductive amination",
+      "reactants": [
+        "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)=O)NC(=O)Cc1ccc2ccccc2c1",
+        "acetaldehyde",
+        "NaBH(OAc)3"
+      ],
+      "product": "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)CC)NC(=O)Cc1ccc2ccccc2c1",
+      "catalyst": "NaBH(OAc)3",
+      "solvent": "MeCN",
+      "yieldEstimate": "88%",
+      "commercialCatalogId": "E719000000",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$8.75"
+    },
+    {
+      "step": 3,
+      "reactionType": "Boc deprotection",
+      "reactants": [
+        "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)CC)NC(=O)Cc1ccc2ccccc2c1",
+        "HCl"
+      ],
+      "product": "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+      "catalyst": "",
+      "solvent": "DCM",
+      "yieldEstimate": "90%",
+      "commercialCatalogId": "A400000001",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$11.20"
+    },
+    {
+      "step": 4,
+      "reactionType": "Propargylation of primary amine",
+      "reactants": [
+        "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+        "propargyl bromide"
+      ],
+      "product": "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+      "catalyst": "K2CO3",
+      "solvent": "DMF",
+      "yieldEstimate": "50%",
+      "commercialCatalogId": "E912500000",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$6.90"
+    }
+  ]
+}
