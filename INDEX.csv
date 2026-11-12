@@ -1,0 +1,2 @@
+canonical_id,inchikey,disease_slug,target,delta_g,avg_rmsd,validation_tier
+MATTERCODE-2026-3CLPRO-00001,BCXHUYTWUUQFDU-UHFFFAOYSA-N,viral-respiratory-infections,3CLpro,-10.26,1.563,Tier-2: 50ns Gold MD
