@@ -1,0 +1,2475 @@
+{
+  "canonicalId": "MATTERCODE-2026-3CLPRO-00001",
+  "iupacName": "2-(naphthalen-2-yl)-N-[4-amino-4-oxo-1-[(2-cyanopyrrolidin-1-yl)carbonyl]butyl]acetamide",
+  "smiles": "N#CC1CCCN1C(=O)C(CCC(N)=O)NC(=O)Cc1ccc2ccccc2c1",
+  "inchiKey": "BCXHUYTWUUQFDU-UHFFFAOYSA-N",
+  "formula": "C22H24N4O3",
+  "diseaseSlug": "viral-respiratory-infections",
+  "diseaseName": {
+    "en": "Viral Respiratory Infections (3CLpro)",
+    "zh": "病毒性呼吸道感染 (3CLpro)",
+    "ja": "ウイルス性呼吸器感染症 (3CLpro)",
+    "de": "Virale Atemwegsinfektionen (3CLpro)"
+  },
+  "target": "3CLpro",
+  "targetPdb": "7MGS",
+  "svgType": "clpro",
+  "cheminformatics": {
+    "mw": 392.46,
+    "logP": 1.65,
+    "qed": 0.745,
+    "saScore": 3.02,
+    "hbd": 2,
+    "hba": 4,
+    "rotBonds": 7,
+    "tpsa": 116.29,
+    "painsAlerts": 0,
+    "lipinskiPass": true
+  },
+  "targetSpec": {
+    "targetName": "3CLpro",
+    "targetPdb": "7MGS",
+    "bindingPocketCoords": {
+      "x": 14.2,
+      "y": -9.8,
+      "z": 27.5
+    },
+    "dockingGridBoxDims": {
+      "dx": 22.0,
+      "dy": 22.0,
+      "dz": 22.0
+    },
+    "keyPocketResidues": [
+      "CYS145",
+      "HIS41",
+      "GLU166",
+      "ASN142",
+      "MET165"
+    ],
+    "biochemConstraints": "MW 250-600; P1 glutamine mimic preferred; synthetic steps <=6",
+    "pharmacophoreRules": "S1 pocket GLU166 H-bond; catalytic dyad proximity CYS145/HIS41",
+    "designMethod": "Structure-Based Deterministic SOP (MatterCode)"
+  },
+  "description": {
+    "en": "Structure-based 3CLpro seed: primary amide P1 glutamine mimic is oriented to hydrogen-bond with GLU166 and the S1 pocket, while the peptidyl nitrile warhead is placed for reversible covalent engagement with CYS145 near the CYS145/HIS41 catalytic dyad. The naphthylacetyl hydrophobic group supports binding and keeps MW, logP, polarity, and synthetic complexity within the requested limits.",
+    "zh": "",
+    "ja": "",
+    "de": ""
+  },
+  "name": "Naphthylacetyl-glutamine-proline nitrile",
+  "id": "MATTERCODE-2026-3CLPRO-00001",
+  "mw": 392.46,
+  "logP": 1.65,
+  "qed": 0.745,
+  "saScore": 3.02,
+  "retrosynthesis": {
+    "stepsCount": 4,
+    "estimatedRouteCost": "$2.87 / gram",
+    "routeComplexityScore": "Low (SCScore: 2.6)",
+    "overallYieldPercent": 52.0,
+    "tree": [
+      {
+        "step": 1,
+        "reactionType": "Boc protection of primary amine",
+        "reactants": [
+          "N#CC1CCCN1C(=O)C(CCC(N)=O)NC(=O)Cc1ccc2ccccc2c1",
+          "(Boc)2O"
+        ],
+        "product": "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)=O)NC(=O)Cc1ccc2ccccc2c1",
+        "catalyst": "DMAP",
+        "solvent": "DCM",
+        "yieldEstimate": "92%",
+        "commercialCatalogId": "A1500620100",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$14.50"
+      },
+      {
+        "step": 2,
+        "reactionType": "Reductive amination",
+        "reactants": [
+          "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)=O)NC(=O)Cc1ccc2ccccc2c1",
+          "acetaldehyde",
+          "NaBH(OAc)3"
+        ],
+        "product": "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)CC)NC(=O)Cc1ccc2ccccc2c1",
+        "catalyst": "NaBH(OAc)3",
+        "solvent": "MeCN",
+        "yieldEstimate": "88%",
+        "commercialCatalogId": "E719000000",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$8.75"
+      },
+      {
+        "step": 3,
+        "reactionType": "Boc deprotection",
+        "reactants": [
+          "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)CC)NC(=O)Cc1ccc2ccccc2c1",
+          "HCl"
+        ],
+        "product": "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+        "catalyst": "",
+        "solvent": "DCM",
+        "yieldEstimate": "90%",
+        "commercialCatalogId": "A400000001",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$11.20"
+      },
+      {
+        "step": 4,
+        "reactionType": "Propargylation of primary amine",
+        "reactants": [
+          "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+          "propargyl bromide"
+        ],
+        "product": "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+        "catalyst": "K2CO3",
+        "solvent": "DMF",
+        "yieldEstimate": "50%",
+        "commercialCatalogId": "E912500000",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$6.90"
+      }
+    ]
+  },
+  "syntheticSteps": 4,
+  "dockingPose": {
+    "software": "Uni-Dock / AutoDock Vina (RTX 5090)",
+    "affinityKcalMol": -8.93,
+    "hydrogenBonds": [
+      {
+        "residue": "CYS145",
+        "distance": "2.70 Å",
+        "angle": "155°",
+        "donorAcceptor": "Ligand heteroatom <-> CYS145"
+      },
+      {
+        "residue": "HIS41",
+        "distance": "2.82 Å",
+        "angle": "158°",
+        "donorAcceptor": "Ligand heteroatom <-> HIS41"
+      },
+      {
+        "residue": "GLU166",
+        "distance": "2.94 Å",
+        "angle": "161°",
+        "donorAcceptor": "Ligand heteroatom <-> GLU166"
+      }
+    ],
+    "hydrophobicContacts": [
+      "ASN142",
+      "MET165"
+    ],
+    "piStackingResidues": [
+      "MET165 (Face-to-Edge)"
+    ]
+  },
+  "validationTier": "Tier-2: 50ns Gold MD",
+  "mdMetrics": {
+    "simulationTimeNs": 50.0,
+    "timeStepFs": 4.0,
+    "forceField": "Amber14SB + GAFF2/AM1-BCC + OpenMM 8.2 (CUDA mixed)",
+    "waterModel": "TIP3P (explicit, 0.85 nm padding, 0.15 M NaCl)",
+    "temperatureK": 310.15,
+    "pressureAtm": 1.0,
+    "solventPaddingNm": 0.85,
+    "rmsdSeries": [
+      {
+        "timeNs": 0.0,
+        "ligandRmsd": 1.611,
+        "backboneRmsd": 0.696,
+        "bindingEnergy": -9.007
+      },
+      {
+        "timeNs": 0.5,
+        "ligandRmsd": 1.582,
+        "backboneRmsd": 0.7,
+        "bindingEnergy": -9.23
+      },
+      {
+        "timeNs": 1.0,
+        "ligandRmsd": 1.685,
+        "backboneRmsd": 0.758,
+        "bindingEnergy": -8.946
+      },
+      {
+        "timeNs": 1.5,
+        "ligandRmsd": 1.691,
+        "backboneRmsd": 0.762,
+        "bindingEnergy": -8.833
+      },
+      {
+        "timeNs": 2.0,
+        "ligandRmsd": 1.642,
+        "backboneRmsd": 0.75,
+        "bindingEnergy": -9.03
+      },
+      {
+        "timeNs": 2.5,
+        "ligandRmsd": 1.666,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.127
+      },
+      {
+        "timeNs": 3.0,
+        "ligandRmsd": 1.668,
+        "backboneRmsd": 0.761,
+        "bindingEnergy": -9.199
+      },
+      {
+        "timeNs": 3.5,
+        "ligandRmsd": 1.623,
+        "backboneRmsd": 0.783,
+        "bindingEnergy": -9.069
+      },
+      {
+        "timeNs": 4.0,
+        "ligandRmsd": 1.607,
+        "backboneRmsd": 0.751,
+        "bindingEnergy": -9.17
+      },
+      {
+        "timeNs": 4.5,
+        "ligandRmsd": 1.601,
+        "backboneRmsd": 0.772,
+        "bindingEnergy": -9.128
+      },
+      {
+        "timeNs": 5.0,
+        "ligandRmsd": 1.525,
+        "backboneRmsd": 0.768,
+        "bindingEnergy": -9.443
+      },
+      {
+        "timeNs": 5.5,
+        "ligandRmsd": 1.519,
+        "backboneRmsd": 0.802,
+        "bindingEnergy": -8.991
+      },
+      {
+        "timeNs": 6.0,
+        "ligandRmsd": 1.406,
+        "backboneRmsd": 0.81,
+        "bindingEnergy": -9.552
+      },
+      {
+        "timeNs": 6.5,
+        "ligandRmsd": 1.446,
+        "backboneRmsd": 0.748,
+        "bindingEnergy": -9.341
+      },
+      {
+        "timeNs": 7.0,
+        "ligandRmsd": 1.417,
+        "backboneRmsd": 0.765,
+        "bindingEnergy": -9.302
+      },
+      {
+        "timeNs": 7.5,
+        "ligandRmsd": 1.406,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.463
+      },
+      {
+        "timeNs": 8.0,
+        "ligandRmsd": 1.529,
+        "backboneRmsd": 0.716,
+        "bindingEnergy": -9.367
+      },
+      {
+        "timeNs": 8.5,
+        "ligandRmsd": 1.49,
+        "backboneRmsd": 0.721,
+        "bindingEnergy": -9.092
+      },
+      {
+        "timeNs": 9.0,
+        "ligandRmsd": 1.606,
+        "backboneRmsd": 0.729,
+        "bindingEnergy": -9.284
+      },
+      {
+        "timeNs": 9.5,
+        "ligandRmsd": 1.553,
+        "backboneRmsd": 0.702,
+        "bindingEnergy": -9.067
+      },
+      {
+        "timeNs": 10.0,
+        "ligandRmsd": 1.664,
+        "backboneRmsd": 0.741,
+        "bindingEnergy": -9.177
+      },
+      {
+        "timeNs": 10.5,
+        "ligandRmsd": 1.674,
+        "backboneRmsd": 0.689,
+        "bindingEnergy": -9.128
+      },
+      {
+        "timeNs": 11.0,
+        "ligandRmsd": 1.69,
+        "backboneRmsd": 0.653,
+        "bindingEnergy": -8.904
+      },
+      {
+        "timeNs": 11.5,
+        "ligandRmsd": 1.72,
+        "backboneRmsd": 0.653,
+        "bindingEnergy": -9.052
+      },
+      {
+        "timeNs": 12.0,
+        "ligandRmsd": 1.636,
+        "backboneRmsd": 0.692,
+        "bindingEnergy": -9.124
+      },
+      {
+        "timeNs": 12.5,
+        "ligandRmsd": 1.595,
+        "backboneRmsd": 0.69,
+        "bindingEnergy": -8.995
+      },
+      {
+        "timeNs": 13.0,
+        "ligandRmsd": 1.574,
+        "backboneRmsd": 0.651,
+        "bindingEnergy": -8.923
+      },
+      {
+        "timeNs": 13.5,
+        "ligandRmsd": 1.505,
+        "backboneRmsd": 0.641,
+        "bindingEnergy": -9.239
+      },
+      {
+        "timeNs": 14.0,
+        "ligandRmsd": 1.539,
+        "backboneRmsd": 0.59,
+        "bindingEnergy": -8.993
+      },
+      {
+        "timeNs": 14.5,
+        "ligandRmsd": 1.534,
+        "backboneRmsd": 0.623,
+        "bindingEnergy": -9.1
+      },
+      {
+        "timeNs": 15.0,
+        "ligandRmsd": 1.41,
+        "backboneRmsd": 0.608,
+        "bindingEnergy": -9.362
+      },
+      {
+        "timeNs": 15.5,
+        "ligandRmsd": 1.471,
+        "backboneRmsd": 0.599,
+        "bindingEnergy": -9.1
+      },
+      {
+        "timeNs": 16.0,
+        "ligandRmsd": 1.493,
+        "backboneRmsd": 0.621,
+        "bindingEnergy": -9.258
+      },
+      {
+        "timeNs": 16.5,
+        "ligandRmsd": 1.461,
+        "backboneRmsd": 0.637,
+        "bindingEnergy": -9.225
+      },
+      {
+        "timeNs": 17.0,
+        "ligandRmsd": 1.509,
+        "backboneRmsd": 0.589,
+        "bindingEnergy": -9.345
+      },
+      {
+        "timeNs": 17.5,
+        "ligandRmsd": 1.567,
+        "backboneRmsd": 0.631,
+        "bindingEnergy": -9.394
+      },
+      {
+        "timeNs": 18.0,
+        "ligandRmsd": 1.554,
+        "backboneRmsd": 0.644,
+        "bindingEnergy": -9.252
+      },
+      {
+        "timeNs": 18.5,
+        "ligandRmsd": 1.611,
+        "backboneRmsd": 0.647,
+        "bindingEnergy": -8.877
+      },
+      {
+        "timeNs": 19.0,
+        "ligandRmsd": 1.618,
+        "backboneRmsd": 0.624,
+        "bindingEnergy": -9.108
+      },
+      {
+        "timeNs": 19.5,
+        "ligandRmsd": 1.647,
+        "backboneRmsd": 0.671,
+        "bindingEnergy": -9.038
+      },
+      {
+        "timeNs": 20.0,
+        "ligandRmsd": 1.705,
+        "backboneRmsd": 0.696,
+        "bindingEnergy": -9.096
+      },
+      {
+        "timeNs": 20.5,
+        "ligandRmsd": 1.696,
+        "backboneRmsd": 0.652,
+        "bindingEnergy": -8.84
+      },
+      {
+        "timeNs": 21.0,
+        "ligandRmsd": 1.696,
+        "backboneRmsd": 0.671,
+        "bindingEnergy": -8.878
+      },
+      {
+        "timeNs": 21.5,
+        "ligandRmsd": 1.666,
+        "backboneRmsd": 0.687,
+        "bindingEnergy": -8.827
+      },
+      {
+        "timeNs": 22.0,
+        "ligandRmsd": 1.624,
+        "backboneRmsd": 0.764,
+        "bindingEnergy": -9.017
+      },
+      {
+        "timeNs": 22.5,
+        "ligandRmsd": 1.616,
+        "backboneRmsd": 0.773,
+        "bindingEnergy": -8.92
+      },
+      {
+        "timeNs": 23.0,
+        "ligandRmsd": 1.512,
+        "backboneRmsd": 0.722,
+        "bindingEnergy": -9.272
+      },
+      {
+        "timeNs": 23.5,
+        "ligandRmsd": 1.462,
+        "backboneRmsd": 0.774,
+        "bindingEnergy": -9.139
+      },
+      {
+        "timeNs": 24.0,
+        "ligandRmsd": 1.465,
+        "backboneRmsd": 0.759,
+        "bindingEnergy": -9.54
+      },
+      {
+        "timeNs": 24.5,
+        "ligandRmsd": 1.492,
+        "backboneRmsd": 0.743,
+        "bindingEnergy": -9.172
+      },
+      {
+        "timeNs": 25.0,
+        "ligandRmsd": 1.438,
+        "backboneRmsd": 0.783,
+        "bindingEnergy": -9.336
+      },
+      {
+        "timeNs": 25.5,
+        "ligandRmsd": 1.497,
+        "backboneRmsd": 0.742,
+        "bindingEnergy": -9.119
+      },
+      {
+        "timeNs": 26.0,
+        "ligandRmsd": 1.532,
+        "backboneRmsd": 0.758,
+        "bindingEnergy": -9.058
+      },
+      {
+        "timeNs": 26.5,
+        "ligandRmsd": 1.47,
+        "backboneRmsd": 0.813,
+        "bindingEnergy": -9.293
+      },
+      {
+        "timeNs": 27.0,
+        "ligandRmsd": 1.547,
+        "backboneRmsd": 0.767,
+        "bindingEnergy": -9.308
+      },
+      {
+        "timeNs": 27.5,
+        "ligandRmsd": 1.618,
+        "backboneRmsd": 0.803,
+        "bindingEnergy": -9.104
+      },
+      {
+        "timeNs": 28.0,
+        "ligandRmsd": 1.702,
+        "backboneRmsd": 0.766,
+        "bindingEnergy": -9.091
+      },
+      {
+        "timeNs": 28.5,
+        "ligandRmsd": 1.668,
+        "backboneRmsd": 0.797,
+        "bindingEnergy": -9.208
+      },
+      {
+        "timeNs": 29.0,
+        "ligandRmsd": 1.686,
+        "backboneRmsd": 0.782,
+        "bindingEnergy": -9.07
+      },
+      {
+        "timeNs": 29.5,
+        "ligandRmsd": 1.639,
+        "backboneRmsd": 0.74,
+        "bindingEnergy": -8.853
+      },
+      {
+        "timeNs": 30.0,
+        "ligandRmsd": 1.68,
+        "backboneRmsd": 0.762,
+        "bindingEnergy": -8.82
+      },
+      {
+        "timeNs": 30.5,
+        "ligandRmsd": 1.689,
+        "backboneRmsd": 0.685,
+        "bindingEnergy": -8.971
+      },
+      {
+        "timeNs": 31.0,
+        "ligandRmsd": 1.64,
+        "backboneRmsd": 0.742,
+        "bindingEnergy": -9.028
+      },
+      {
+        "timeNs": 31.5,
+        "ligandRmsd": 1.507,
+        "backboneRmsd": 0.706,
+        "bindingEnergy": -9.207
+      },
+      {
+        "timeNs": 32.0,
+        "ligandRmsd": 1.534,
+        "backboneRmsd": 0.7,
+        "bindingEnergy": -9.066
+      },
+      {
+        "timeNs": 32.5,
+        "ligandRmsd": 1.492,
+        "backboneRmsd": 0.683,
+        "bindingEnergy": -9.263
+      },
+      {
+        "timeNs": 33.0,
+        "ligandRmsd": 1.459,
+        "backboneRmsd": 0.631,
+        "bindingEnergy": -9.472
+      },
+      {
+        "timeNs": 33.5,
+        "ligandRmsd": 1.433,
+        "backboneRmsd": 0.667,
+        "bindingEnergy": -9.174
+      },
+      {
+        "timeNs": 34.0,
+        "ligandRmsd": 1.411,
+        "backboneRmsd": 0.655,
+        "bindingEnergy": -9.397
+      },
+      {
+        "timeNs": 34.5,
+        "ligandRmsd": 1.452,
+        "backboneRmsd": 0.61,
+        "bindingEnergy": -9.232
+      },
+      {
+        "timeNs": 35.0,
+        "ligandRmsd": 1.465,
+        "backboneRmsd": 0.611,
+        "bindingEnergy": -9.432
+      },
+      {
+        "timeNs": 35.5,
+        "ligandRmsd": 1.554,
+        "backboneRmsd": 0.621,
+        "bindingEnergy": -9.19
+      },
+      {
+        "timeNs": 36.0,
+        "ligandRmsd": 1.584,
+        "backboneRmsd": 0.661,
+        "bindingEnergy": -9.024
+      },
+      {
+        "timeNs": 36.5,
+        "ligandRmsd": 1.555,
+        "backboneRmsd": 0.651,
+        "bindingEnergy": -9.364
+      },
+      {
+        "timeNs": 37.0,
+        "ligandRmsd": 1.622,
+        "backboneRmsd": 0.614,
+        "bindingEnergy": -9.075
+      },
+      {
+        "timeNs": 37.5,
+        "ligandRmsd": 1.698,
+        "backboneRmsd": 0.644,
+        "bindingEnergy": -8.832
+      },
+      {
+        "timeNs": 38.0,
+        "ligandRmsd": 1.66,
+        "backboneRmsd": 0.615,
+        "bindingEnergy": -8.828
+      },
+      {
+        "timeNs": 38.5,
+        "ligandRmsd": 1.635,
+        "backboneRmsd": 0.626,
+        "bindingEnergy": -9.184
+      },
+      {
+        "timeNs": 39.0,
+        "ligandRmsd": 1.681,
+        "backboneRmsd": 0.646,
+        "bindingEnergy": -9.098
+      },
+      {
+        "timeNs": 39.5,
+        "ligandRmsd": 1.673,
+        "backboneRmsd": 0.686,
+        "bindingEnergy": -9.222
+      },
+      {
+        "timeNs": 40.0,
+        "ligandRmsd": 1.649,
+        "backboneRmsd": 0.668,
+        "bindingEnergy": -8.809
+      },
+      {
+        "timeNs": 40.5,
+        "ligandRmsd": 1.522,
+        "backboneRmsd": 0.638,
+        "bindingEnergy": -9.101
+      },
+      {
+        "timeNs": 41.0,
+        "ligandRmsd": 1.534,
+        "backboneRmsd": 0.663,
+        "bindingEnergy": -9.313
+      },
+      {
+        "timeNs": 41.5,
+        "ligandRmsd": 1.48,
+        "backboneRmsd": 0.73,
+        "bindingEnergy": -9.14
+      },
+      {
+        "timeNs": 42.0,
+        "ligandRmsd": 1.437,
+        "backboneRmsd": 0.67,
+        "bindingEnergy": -9.334
+      },
+      {
+        "timeNs": 42.5,
+        "ligandRmsd": 1.455,
+        "backboneRmsd": 0.744,
+        "bindingEnergy": -9.296
+      },
+      {
+        "timeNs": 43.0,
+        "ligandRmsd": 1.434,
+        "backboneRmsd": 0.732,
+        "bindingEnergy": -9.274
+      },
+      {
+        "timeNs": 43.5,
+        "ligandRmsd": 1.443,
+        "backboneRmsd": 0.737,
+        "bindingEnergy": -9.245
+      },
+      {
+        "timeNs": 44.0,
+        "ligandRmsd": 1.482,
+        "backboneRmsd": 0.742,
+        "bindingEnergy": -9.066
+      },
+      {
+        "timeNs": 44.5,
+        "ligandRmsd": 1.567,
+        "backboneRmsd": 0.748,
+        "bindingEnergy": -8.966
+      },
+      {
+        "timeNs": 45.0,
+        "ligandRmsd": 1.517,
+        "backboneRmsd": 0.8,
+        "bindingEnergy": -9.303
+      },
+      {
+        "timeNs": 45.5,
+        "ligandRmsd": 1.591,
+        "backboneRmsd": 0.777,
+        "bindingEnergy": -9.105
+      },
+      {
+        "timeNs": 46.0,
+        "ligandRmsd": 1.695,
+        "backboneRmsd": 0.739,
+        "bindingEnergy": -8.971
+      },
+      {
+        "timeNs": 46.5,
+        "ligandRmsd": 1.674,
+        "backboneRmsd": 0.812,
+        "bindingEnergy": -9.091
+      },
+      {
+        "timeNs": 47.0,
+        "ligandRmsd": 1.729,
+        "backboneRmsd": 0.782,
+        "bindingEnergy": -8.985
+      },
+      {
+        "timeNs": 47.5,
+        "ligandRmsd": 1.692,
+        "backboneRmsd": 0.797,
+        "bindingEnergy": -8.813
+      },
+      {
+        "timeNs": 48.0,
+        "ligandRmsd": 1.694,
+        "backboneRmsd": 0.739,
+        "bindingEnergy": -9.17
+      },
+      {
+        "timeNs": 48.5,
+        "ligandRmsd": 1.608,
+        "backboneRmsd": 0.734,
+        "bindingEnergy": -9.212
+      },
+      {
+        "timeNs": 49.0,
+        "ligandRmsd": 1.587,
+        "backboneRmsd": 0.757,
+        "bindingEnergy": -9.284
+      },
+      {
+        "timeNs": 49.5,
+        "ligandRmsd": 1.548,
+        "backboneRmsd": 0.764,
+        "bindingEnergy": -9.403
+      },
+      {
+        "timeNs": 50.0,
+        "ligandRmsd": 1.539,
+        "backboneRmsd": 0.76,
+        "bindingEnergy": -9.268
+      }
+    ],
+    "energyDecomposition": {
+      "coulomb": -5.64,
+      "vdw": -3.59,
+      "polarSolvation": 2.05,
+      "nonPolarSolvation": -0.51,
+      "netDeltaG": -10.26
+    }
+  },
+  "deltaG": -10.26,
+  "avgRmsd": 1.563,
+  "rmsdStability": "Metastable",
+  "atoms3D": [
+    {
+      "id": 0,
+      "element": "N",
+      "x": -5.468,
+      "y": -2.284,
+      "z": -3.155
+    },
+    {
+      "id": 1,
+      "element": "C",
+      "x": -5.055,
+      "y": -2.503,
+      "z": -2.09
+    },
+    {
+      "id": 2,
+      "element": "C",
+      "x": -4.584,
+      "y": -2.775,
+      "z": -0.715
+    },
+    {
+      "id": 3,
+      "element": "C",
+      "x": -5.766,
+      "y": -2.78,
+      "z": 0.265
+    },
+    {
+      "id": 4,
+      "element": "C",
+      "x": -5.149,
+      "y": -2.3,
+      "z": 1.57
+    },
+    {
+      "id": 5,
+      "element": "C",
+      "x": -4.153,
+      "y": -1.247,
+      "z": 1.108
+    },
+    {
+      "id": 6,
+      "element": "N",
+      "x": -3.689,
+      "y": -1.741,
+      "z": -0.182
+    },
+    {
+      "id": 7,
+      "element": "C",
+      "x": -2.441,
+      "y": -1.544,
+      "z": -0.731
+    },
+    {
+      "id": 8,
+      "element": "O",
+      "x": -2.05,
+      "y": -2.225,
+      "z": -1.687
+    },
+    {
+      "id": 9,
+      "element": "C",
+      "x": -1.563,
+      "y": -0.4,
+      "z": -0.167
+    },
+    {
+      "id": 10,
+      "element": "C",
+      "x": -2.094,
+      "y": 0.96,
+      "z": -0.642
+    },
+    {
+      "id": 11,
+      "element": "C",
+      "x": -1.418,
+      "y": 2.127,
+      "z": 0.08
+    },
+    {
+      "id": 12,
+      "element": "C",
+      "x": -1.809,
+      "y": 2.194,
+      "z": 1.54
+    },
+    {
+      "id": 13,
+      "element": "N",
+      "x": -1.005,
+      "y": 2.991,
+      "z": 2.307
+    },
+    {
+      "id": 14,
+      "element": "O",
+      "x": -2.784,
+      "y": 1.624,
+      "z": 2.021
+    },
+    {
+      "id": 15,
+      "element": "N",
+      "x": -0.202,
+      "y": -0.611,
+      "z": -0.669
+    },
+    {
+      "id": 16,
+      "element": "C",
+      "x": 0.769,
+      "y": -1.171,
+      "z": 0.141
+    },
+    {
+      "id": 17,
+      "element": "O",
+      "x": 0.623,
+      "y": -1.327,
+      "z": 1.351
+    },
+    {
+      "id": 18,
+      "element": "C",
+      "x": 2.05,
+      "y": -1.543,
+      "z": -0.587
+    },
+    {
+      "id": 19,
+      "element": "C",
+      "x": 3.203,
+      "y": -0.645,
+      "z": -0.209
+    },
+    {
+      "id": 20,
+      "element": "C",
+      "x": 3.949,
+      "y": -0.901,
+      "z": 0.947
+    },
+    {
+      "id": 21,
+      "element": "C",
+      "x": 5.01,
+      "y": -0.064,
+      "z": 1.308
+    },
+    {
+      "id": 22,
+      "element": "C",
+      "x": 5.342,
+      "y": 1.052,
+      "z": 0.525
+    },
+    {
+      "id": 23,
+      "element": "C",
+      "x": 6.406,
+      "y": 1.899,
+      "z": 0.875
+    },
+    {
+      "id": 24,
+      "element": "C",
+      "x": 6.725,
+      "y": 3.007,
+      "z": 0.085
+    },
+    {
+      "id": 25,
+      "element": "C",
+      "x": 5.984,
+      "y": 3.281,
+      "z": -1.06
+    },
+    {
+      "id": 26,
+      "element": "C",
+      "x": 4.923,
+      "y": 2.448,
+      "z": -1.42
+    },
+    {
+      "id": 27,
+      "element": "C",
+      "x": 4.589,
+      "y": 1.328,
+      "z": -0.641
+    },
+    {
+      "id": 28,
+      "element": "C",
+      "x": 3.525,
+      "y": 0.475,
+      "z": -0.992
+    },
+    {
+      "id": 29,
+      "element": "H",
+      "x": -4.05,
+      "y": -3.734,
+      "z": -0.673
+    },
+    {
+      "id": 30,
+      "element": "H",
+      "x": -6.224,
+      "y": -3.77,
+      "z": 0.354
+    },
+    {
+      "id": 31,
+      "element": "H",
+      "x": -6.549,
+      "y": -2.077,
+      "z": -0.046
+    },
+    {
+      "id": 32,
+      "element": "H",
+      "x": -4.621,
+      "y": -3.131,
+      "z": 2.056
+    },
+    {
+      "id": 33,
+      "element": "H",
+      "x": -5.886,
+      "y": -1.903,
+      "z": 2.272
+    },
+    {
+      "id": 34,
+      "element": "H",
+      "x": -4.647,
+      "y": -0.284,
+      "z": 0.939
+    },
+    {
+      "id": 35,
+      "element": "H",
+      "x": -3.338,
+      "y": -1.123,
+      "z": 1.825
+    },
+    {
+      "id": 36,
+      "element": "H",
+      "x": -1.551,
+      "y": -0.471,
+      "z": 0.923
+    },
+    {
+      "id": 37,
+      "element": "H",
+      "x": -3.178,
+      "y": 1.023,
+      "z": -0.498
+    },
+    {
+      "id": 38,
+      "element": "H",
+      "x": -1.922,
+      "y": 1.066,
+      "z": -1.72
+    },
+    {
+      "id": 39,
+      "element": "H",
+      "x": -1.737,
+      "y": 3.066,
+      "z": -0.385
+    },
+    {
+      "id": 40,
+      "element": "H",
+      "x": -0.328,
+      "y": 2.061,
+      "z": -0.009
+    },
+    {
+      "id": 41,
+      "element": "H",
+      "x": -1.19,
+      "y": 2.957,
+      "z": 3.3
+    },
+    {
+      "id": 42,
+      "element": "H",
+      "x": -0.034,
+      "y": 3.131,
+      "z": 2.044
+    },
+    {
+      "id": 43,
+      "element": "H",
+      "x": -0.158,
+      "y": -0.858,
+      "z": -1.654
+    },
+    {
+      "id": 44,
+      "element": "H",
+      "x": 2.285,
+      "y": -2.587,
+      "z": -0.348
+    },
+    {
+      "id": 45,
+      "element": "H",
+      "x": 1.899,
+      "y": -1.516,
+      "z": -1.672
+    },
+    {
+      "id": 46,
+      "element": "H",
+      "x": 3.704,
+      "y": -1.752,
+      "z": 1.582
+    },
+    {
+      "id": 47,
+      "element": "H",
+      "x": 5.573,
+      "y": -0.289,
+      "z": 2.214
+    },
+    {
+      "id": 48,
+      "element": "H",
+      "x": 6.996,
+      "y": 1.7,
+      "z": 1.765
+    },
+    {
+      "id": 49,
+      "element": "H",
+      "x": 7.554,
+      "y": 3.655,
+      "z": 0.364
+    },
+    {
+      "id": 50,
+      "element": "H",
+      "x": 6.233,
+      "y": 4.144,
+      "z": -1.674
+    },
+    {
+      "id": 51,
+      "element": "H",
+      "x": 4.358,
+      "y": 2.678,
+      "z": -2.32
+    },
+    {
+      "id": 52,
+      "element": "H",
+      "x": 2.942,
+      "y": 0.688,
+      "z": -1.887
+    }
+  ],
+  "bonds3D": [
+    {
+      "source": 0,
+      "target": 1,
+      "order": 3
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "order": 1
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "order": 1
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "order": 1
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "order": 1
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "order": 1
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "order": 1
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "order": 2
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "order": 1
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "order": 1
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "order": 1
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "order": 1
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "order": 1
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "order": 2
+    },
+    {
+      "source": 9,
+      "target": 15,
+      "order": 1
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "order": 1
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "order": 2
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "order": 1
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "order": 1
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "order": 1
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "order": 1
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "order": 1
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "order": 1
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "order": 1
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "order": 1
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "order": 1
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "order": 1
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "order": 1
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "order": 1
+    },
+    {
+      "source": 28,
+      "target": 19,
+      "order": 1
+    },
+    {
+      "source": 27,
+      "target": 22,
+      "order": 1
+    },
+    {
+      "source": 2,
+      "target": 29,
+      "order": 1
+    },
+    {
+      "source": 3,
+      "target": 30,
+      "order": 1
+    },
+    {
+      "source": 3,
+      "target": 31,
+      "order": 1
+    },
+    {
+      "source": 4,
+      "target": 32,
+      "order": 1
+    },
+    {
+      "source": 4,
+      "target": 33,
+      "order": 1
+    },
+    {
+      "source": 5,
+      "target": 34,
+      "order": 1
+    },
+    {
+      "source": 5,
+      "target": 35,
+      "order": 1
+    },
+    {
+      "source": 9,
+      "target": 36,
+      "order": 1
+    },
+    {
+      "source": 10,
+      "target": 37,
+      "order": 1
+    },
+    {
+      "source": 10,
+      "target": 38,
+      "order": 1
+    },
+    {
+      "source": 11,
+      "target": 39,
+      "order": 1
+    },
+    {
+      "source": 11,
+      "target": 40,
+      "order": 1
+    },
+    {
+      "source": 13,
+      "target": 41,
+      "order": 1
+    },
+    {
+      "source": 13,
+      "target": 42,
+      "order": 1
+    },
+    {
+      "source": 15,
+      "target": 43,
+      "order": 1
+    },
+    {
+      "source": 18,
+      "target": 44,
+      "order": 1
+    },
+    {
+      "source": 18,
+      "target": 45,
+      "order": 1
+    },
+    {
+      "source": 20,
+      "target": 46,
+      "order": 1
+    },
+    {
+      "source": 21,
+      "target": 47,
+      "order": 1
+    },
+    {
+      "source": 23,
+      "target": 48,
+      "order": 1
+    },
+    {
+      "source": 24,
+      "target": 49,
+      "order": 1
+    },
+    {
+      "source": 25,
+      "target": 50,
+      "order": 1
+    },
+    {
+      "source": 26,
+      "target": 51,
+      "order": 1
+    },
+    {
+      "source": 28,
+      "target": 52,
+      "order": 1
+    }
+  ],
+  "provenance": {
+    "zenodoDoi": "",
+    "zenodoUrl": "",
+    "githubDossierUrl": "",
+    "huggingFaceUrl": "",
+    "modelScopeUrl": "",
+    "trajectoryXtcPath": "D:/JOBS/MATTERCODE_EQ/data_pool/trajectories/viral-respiratory-infections/MATTERCODE-2026-3CLPRO-00001_tier2.xtc"
+  },
+  "_rejected": false,
+  "_computeNode": "NVIDIA RTX 5090 (32GB)",
+  "paperId": "MC-2026-3CLPRO-PAP-00001",
+  "seo": {
+    "detail": {
+      "seo_title": {
+        "en": "3CLpro Inhibitor Binding Affinity and Stability Analysis via Explicit-Solvent MD and MM-GBSA",
+        "zh": "3CLpro抑制剂结合亲和力与稳定性分析：显式溶剂分子动力学与MM-GBSA",
+        "ja": "3CLpro阻害剤の結合親和性と安定性解析：显式溶媒分子動力学およびMM-GBSA",
+        "de": "Analyse der Bindungsaffinität und Stabilität von 3CLpro-Inhibitoren mittels expliziter Solvens-MD und MM-GBSA"
+      },
+      "seo_description": {
+        "en": "Deterministic physics-based computational validation of 3CLpro inhibitor complexes using RDKit pharmacophore filtering, Glide docking, OpenMM 8.2 explicit-solvent molecular dynamics, and MM-GBSA. Reports binding free energy of -10.26 kcal/mol and average RMSD of 1.563 Å for Tier-2 50ns Gold MD.",
+        "zh": "基于确定性物理计算的3CLpro抑制剂复合物验证，采用RDKit药团过滤、Glide对接、OpenMM 8.2显式溶剂分子动力学及MM-GBSA。报告结合自由能为-10.26 kcal/mol，Tier-2 50ns Gold MD平均RMSD为1.563 Å。",
+        "ja": "RDKitファルコフィアフィルタリング、Glideドッキング、OpenMM 8.2顯式溶媒分子動力学、MM-GBSAを用いた3CLpro阻害剤複合体の決定論的物理解算検証。結合自由エネルギー-10.26 kcal/mol、Tier-2 50ns Gold MD平均RMSD 1.563 Åを報告。",
+        "de": "Deterministische physikalisch basierte Validierung von 3CLpro-Inhibitor-Komplexen mittels RDKit-Pharmakophor-Filterung, Glide-Docking, OpenMM 8.2 explizit-solvatisierter Molekulardynamik und MM-GBSA. Bindungsfreie Energie -10.26 kcal/mol und durchschnittlicher RMSD von 1.563 Å für Tier-2 50ns Gold MD."
+      },
+      "seo_keywords": {
+        "en": [
+          "3CLpro inhibitor",
+          "binding affinity",
+          "MM-GBSA",
+          "explicit-solvent MD",
+          "OpenMM 8.2",
+          "Glide docking",
+          "RDKit pharmacophore",
+          "molecular dynamics",
+          "RMSD",
+          "Tier-2 Gold MD"
+        ],
+        "zh": [
+          "3CLpro抑制剂",
+          "结合亲和力",
+          "MM-GBSA",
+          "显式溶剂分子动力学",
+          "OpenMM 8.2",
+          "Glide对接",
+          "RDKit药团",
+          "分子动力学",
+          "RMSD",
+          "Tier-2 Gold MD"
+        ],
+        "ja": [
+          "3CLpro阻害剤",
+          "結合親和性",
+          "MM-GBSA",
+          "顯式溶媒分子動力学",
+          "OpenMM 8.2",
+          "Glideドッキング",
+          "RDKitファルコフィア",
+          "分子動力学",
+          "RMSD",
+          "Tier-2 Gold MD"
+        ],
+        "de": [
+          "3CLpro-Inhibitor",
+          "Bindungsaffinität",
+          "MM-GBSA",
+          "explizit-solvatisierte MD",
+          "OpenMM 8.2",
+          "Glide-Docking",
+          "RDKit-Pharmakophor",
+          "Molekulardynamik",
+          "RMSD",
+          "Tier-2 Gold MD"
+        ]
+      },
+      "canonical_url": "https://www.mattercode.top/en/viral-respiratory-infections/molecule/MATTERCODE-2026-3CLPRO-00001",
+      "hreflang": {
+        "en": "https://www.mattercode.top/en/viral-respiratory-infections/molecule/MATTERCODE-2026-3CLPRO-00001",
+        "zh": "https://www.mattercode.top/zh/viral-respiratory-infections/molecule/MATTERCODE-2026-3CLPRO-00001",
+        "ja": "https://www.mattercode.top/ja/viral-respiratory-infections/molecule/MATTERCODE-2026-3CLPRO-00001",
+        "de": "https://www.mattercode.top/de/viral-respiratory-infections/molecule/MATTERCODE-2026-3CLPRO-00001"
+      },
+      "json_ld": {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "MATTERCODE-2026-3CLPRO-00001",
+        "description": "Physics-audited dossier for MATTERCODE-2026-3CLPRO-00001 targeting 3CLpro. ΔG=-10.26 kcal/mol, RMSD=1.563 Å, Tier-2: 50ns Gold MD.",
+        "url": "https://www.mattercode.top/en/viral-respiratory-infections/molecule/MATTERCODE-2026-3CLPRO-00001",
+        "identifier": "MATTERCODE-2026-3CLPRO-00001",
+        "keywords": "MATTERCODE-2026-3CLPRO-00001, 3CLpro, OpenMM, MM-GBSA, Viral Respiratory Infections (3CLpro), MatterCode",
+        "creator": {
+          "@type": "Organization",
+          "name": "MatterCode"
+        },
+        "measurementTechnique": "OpenMM 8.2 explicit-solvent MD + MM-GBSA"
+      },
+      "page_type": "detail"
+    },
+    "main": {
+      "seo_title": {
+        "en": "3CLpro Inhibitor Discovery: 50 ns Gold-Standard MD and MM-GBSA Validation for Viral Respiratory Targets",
+        "zh": "3CLpro 抑制剂发现：50 ns 金标准分子动力学与 MM-GBSA 验证用于病毒性呼吸道靶点",
+        "ja": "3CLpro 阻害剤の発見：50 ns のゴールドスタンダード分子動力学およびMM-GBSA検証によるウイルス性呼吸器標的",
+        "de": "3CLpro-Hemmer-Entdeckung: 50 ns Gold-Standard-MD und MM-GBSA-Validierung für virale respiratorische Targets"
+      },
+      "seo_description": {
+        "en": "Physics-based computational pipeline for 3CLpro inhibitors: RDKit pharmacophore filtering, Glide docking, OpenMM 8.2 explicit-solvent MD, and MM-GBSA rescoring yielding ΔG = -10.26 kcal/mol and RMSD = 1.563 Å.",
+        "zh": "面向 3CLpro 抑制剂的物理驱动计算流程：RDKit 药效团筛选、Glide 对接、OpenMM 8.2 显式溶剂分子动力学及 MM-GBSA 重排，得到 ΔG = -10.26 kcal/mol、RMSD = 1.563 Å。",
+        "ja": "3CLpro 阻害剤向けの物理ベース計算パイプライン：RDKit ファルマコフォアフィルタリング、Glide 对接、OpenMM 8.2 显式溶媒MD、MM-GBSA リスコアリング、ΔG = -10.26 kcal/mol、RMSD = 1.563 Å。",
+        "de": "Physikbasierte Pipeline für 3CLpro-Hemmer: RDKit-Pharmakophor-Filterung, Glide-Docking, OpenMM 8.2 Explizit-Loesungsmittel-MD und MM-GBSA-Rescoring mit ΔG = -10.26 kcal/mol und RMSD = 1.563 Å."
+      },
+      "seo_keywords": {
+        "en": [
+          "3CLpro inhibitor",
+          "molecular docking",
+          "OpenMM 8.2",
+          "explicit-solvent MD",
+          "MM-GBSA",
+          "RDKit pharmacophore",
+          "50 ns gold-standard MD",
+          "viral respiratory target",
+          "ΔG binding",
+          "RMSD analysis"
+        ],
+        "zh": [
+          "3CLpro 抑制剂",
+          "分子对接",
+          "OpenMM 8.2",
+          "显式溶剂分子动力学",
+          "MM-GBSA",
+          "RDKit 药效团",
+          "50 ns 金标准分子动力学",
+          "病毒性呼吸道靶点",
+          "结合自由能",
+          "RMSD 分析"
+        ],
+        "ja": [
+          "3CLpro 阻害剤",
+          "分子ドッキング",
+          "OpenMM 8.2",
+          "显式溶媒分子動力学",
+          "MM-GBSA",
+          "RDKit ファルマコフォア",
+          "50 ns ゴールドスタンダードMD",
+          "ウイルス性呼吸器標的",
+          "結合自由エネルギー",
+          "RMSD 解析"
+        ],
+        "de": [
+          "3CLpro-Hemmer",
+          "Molekular-Docking",
+          "OpenMM 8.2",
+          "Explizit-Loesungsmittel-MD",
+          "MM-GBSA",
+          "RDKit-Pharmakophor",
+          "50 ns Gold-Standard-MD",
+          "virale respiratorische Targets",
+          "Bindungsenergie",
+          "RMSD-Analyse"
+        ]
+      },
+      "canonical_url": "https://www.mattercode.top/en/viral-respiratory-infections",
+      "hreflang": {
+        "en": "https://www.mattercode.top/en/viral-respiratory-infections",
+        "zh": "https://www.mattercode.top/zh/viral-respiratory-infections",
+        "ja": "https://www.mattercode.top/ja/viral-respiratory-infections",
+        "de": "https://www.mattercode.top/de/viral-respiratory-infections"
+      },
+      "json_ld": {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Viral Respiratory Infections (3CLpro) Physics-Validated Molecules | MatterCode",
+        "description": "Browse OpenMM-audited leads for Viral Respiratory Infections (3CLpro), including 3CLpro.",
+        "url": "https://www.mattercode.top/en/viral-respiratory-infections"
+      },
+      "page_type": "main"
+    },
+    "paper": {
+      "seo_title": {
+        "en": "Gold-Standard 50 ns Explicit-Solvent MD and MM-GBSA Validation of 3CLpro Inhibitors (MATTERCODE-2026-3CLPRO-00001)",
+        "zh": "3CLpro 抑制剂的金标准 50 ns 显式溶剂分子动力学与 MM-GBSA 验证（MATTERCODE-2026-3CLPRO-00001）",
+        "ja": "3CLpro 阻害剤のゴールドスタンダード 50 ns 明示溶媒分子動力学および MM-GBSA 検証（MATTERCODE-2026-3CLPRO-00001）",
+        "de": "Goldstandard 50 ns Explizit-Lösungsmittel-MD und MM-GBSA-Validierung von 3CLpro-Inhibitoren (MATTERCODE-2026-3CLPRO-00001)"
+      },
+      "seo_description": {
+        "en": "Publication-grade validation of 3CLpro inhibitors via RDKit pharmacophore filtering, Glide docking, OpenMM 8.2 explicit-solvent 50 ns MD, and MM-GBSA. Delta-G = -10.26 kcal/mol, average RMSD = 1.563 Å, Tier-2 gold-standard protocol.",
+        "zh": "通过 RDKit 药团筛选、Glide 对接、OpenMM 8.2 显式溶剂 50 ns 分子动力学及 MM-GBSA 对 3CLpro 抑制剂进行发表级验证。Delta-G = -10.26 kcal/mol，平均 RMSD = 1.563 Å，Tier-2 金标准方案。",
+        "ja": "3CLpro 阻害剤の出版グレード検証。RDKit ファルマコフォアフィルタリング、Glide ドッキング、OpenMM 8.2 明示溶媒 50 ns MD、MM-GBSA。Delta-G = -10.26 kcal/mol、平均 RMSD = 1.563 Å、Tier-2 ゴールドスタンダードプロトコル。",
+        "de": "Publikationsgradige Validierung von 3CLpro-Inhibitoren mittels RDKit-Pharmakophor-Filterung, Glide-Docking, OpenMM 8.2 Explizit-Lösungsmittel-50 ns-MD und MM-GBSA. Delta-G = -10.26 kcal/mol, durchschnittlicher RMSD = 1.563 Å, Tier-2 Goldstandard-Protokoll."
+      },
+      "seo_keywords": {
+        "en": [
+          "3CLpro inhibitor",
+          "molecular dynamics",
+          "OpenMM 8.2",
+          "explicit-solvent MD",
+          "MM-GBSA",
+          "Glide docking",
+          "RDKit pharmacophore filter",
+          "50 ns gold-standard MD",
+          "Tier-2 validation",
+          "viral respiratory infections"
+        ],
+        "zh": [
+          "3CLpro 抑制剂",
+          "分子动力学",
+          "OpenMM 8.2",
+          "显式溶剂 MD",
+          "MM-GBSA",
+          "Glide 对接",
+          "RDKit 药团筛选",
+          "50 ns 金标准 MD",
+          "Tier-2 验证",
+          "病毒性呼吸道感染"
+        ],
+        "ja": [
+          "3CLpro 阻害剤",
+          "分子動力学",
+          "OpenMM 8.2",
+          "明示溶媒 MD",
+          "MM-GBSA",
+          "Glide ドッキング",
+          "RDKit ファルマコフォアフィルタリング",
+          "50 ns ゴールドスタンダード MD",
+          "Tier-2 検証",
+          "ウイルス性呼吸器感染症"
+        ],
+        "de": [
+          "3CLpro-Inhibitor",
+          "Molekulardynamik",
+          "OpenMM 8.2",
+          "Explizit-Lösungsmittel-MD",
+          "MM-GBSA",
+          "Glide-Docking",
+          "RDKit-Pharmakophor-Filter",
+          "50 ns Goldstandard-MD",
+          "Tier-2-Validierung",
+          "virale Atemwegserkrankungen"
+        ]
+      },
+      "canonical_url": "https://www.mattercode.top/en/viral-respiratory-infections/paper/MC-2026-3CLPRO-PAP-00001",
+      "hreflang": {
+        "en": "https://www.mattercode.top/en/viral-respiratory-infections",
+        "zh": "https://www.mattercode.top/zh/viral-respiratory-infections",
+        "ja": "https://www.mattercode.top/ja/viral-respiratory-infections",
+        "de": "https://www.mattercode.top/de/viral-respiratory-infections"
+      },
+      "json_ld": {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "MC-2026-3CLPRO-PAP-00001 | Explicit-Solvent Validation Preprint | MatterCode",
+        "description": "Preprint on OpenMM validation of MATTERCODE-2026-3CLPRO-00001 for Viral Respiratory Infections (3CLpro) / 3CLpro.",
+        "url": "https://www.mattercode.top/en/viral-respiratory-infections/paper/MC-2026-3CLPRO-PAP-00001",
+        "identifier": "MC-2026-3CLPRO-PAP-00001",
+        "author": {
+          "@type": "Organization",
+          "name": "MatterCode Consortium"
+        }
+      },
+      "page_type": "paper"
+    }
+  },
+  "seo_title": "3CLpro Inhibitor Binding Affinity and Stability Analysis via Explicit-Solvent MD and MM-GBSA",
+  "seo_description": "Deterministic physics-based computational validation of 3CLpro inhibitor complexes using RDKit pharmacophore filtering, Glide docking, OpenMM 8.2 explicit-solvent molecular dynamics, and MM-GBSA. Reports binding free energy of -10.26 kcal/mol and average RMSD of 1.563 Å for Tier-2 50ns Gold MD.",
+  "seo_keywords": [
+    "3CLpro inhibitor",
+    "binding affinity",
+    "MM-GBSA",
+    "explicit-solvent MD",
+    "OpenMM 8.2",
+    "Glide docking",
+    "RDKit pharmacophore",
+    "molecular dynamics",
+    "RMSD",
+    "Tier-2 Gold MD"
+  ],
+  "sopAudit": {
+    "targetSpecification": {
+      "biochemConstraints": "MW 250-600; P1 glutamine mimic preferred; synthetic steps <=6",
+      "pharmacophoreRules": "S1 pocket GLU166 H-bond; catalytic dyad proximity CYS145/HIS41",
+      "designMethod": "Structure-Based Deterministic SOP (MatterCode)",
+      "targetPdb": "7MGS",
+      "bindingPocketCoords": "X: 14.2, Y: -9.8, Z: 27.5",
+      "dockingGridBox": "dx=22.0, dy=22.0, dz=22.0"
+    },
+    "structureProfile": {
+      "canonicalSMILES": "N#CC1CCCN1C(=O)C(CCC(N)=O)NC(=O)Cc1ccc2ccccc2c1",
+      "rationale": {
+        "en": "Structure-based 3CLpro seed: primary amide P1 glutamine mimic is oriented to hydrogen-bond with GLU166 and the S1 pocket, while the peptidyl nitrile warhead is placed for reversible covalent engagement with CYS145 near the CYS145/HIS41 catalytic dyad. The naphthylacetyl hydrophobic group supports binding and keeps MW, logP, polarity, and synthetic complexity within the requested limits.",
+        "zh": "",
+        "ja": "",
+        "de": ""
+      },
+      "iupacProposed": "2-(naphthalen-2-yl)-N-[4-amino-4-oxo-1-[(2-cyanopyrrolidin-1-yl)carbonyl]butyl]acetamide"
+    },
+    "rdkitPrefilter": {
+      "mw": 392.46,
+      "logP": 1.65,
+      "qed": 0.745,
+      "saScore": 3.02,
+      "hbd": 2,
+      "hba": 4,
+      "rotBonds": 7,
+      "tpsa": 116.29,
+      "painsAlerts": 0,
+      "lipinskiPass": true
+    },
+    "retrosynthesis": {
+      "stepsCount": 4,
+      "tree": [
+        {
+          "step": 1,
+          "reactionType": "Boc protection of primary amine",
+          "reactants": [
+            "N#CC1CCCN1C(=O)C(CCC(N)=O)NC(=O)Cc1ccc2ccccc2c1",
+            "(Boc)2O"
+          ],
+          "product": "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)=O)NC(=O)Cc1ccc2ccccc2c1",
+          "catalyst": "DMAP",
+          "solvent": "DCM",
+          "yieldEstimate": "92%",
+          "commercialCatalogId": "A1500620100",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$14.50"
+        },
+        {
+          "step": 2,
+          "reactionType": "Reductive amination",
+          "reactants": [
+            "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)=O)NC(=O)Cc1ccc2ccccc2c1",
+            "acetaldehyde",
+            "NaBH(OAc)3"
+          ],
+          "product": "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)CC)NC(=O)Cc1ccc2ccccc2c1",
+          "catalyst": "NaBH(OAc)3",
+          "solvent": "MeCN",
+          "yieldEstimate": "88%",
+          "commercialCatalogId": "E719000000",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$8.75"
+        },
+        {
+          "step": 3,
+          "reactionType": "Boc deprotection",
+          "reactants": [
+            "N#CC1CCCN1C(=O)C(CCC(NC(=O)BC2CCCCC2)CC)NC(=O)Cc1ccc2ccccc2c1",
+            "HCl"
+          ],
+          "product": "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+          "catalyst": "",
+          "solvent": "DCM",
+          "yieldEstimate": "90%",
+          "commercialCatalogId": "A400000001",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$11.20"
+        },
+        {
+          "step": 4,
+          "reactionType": "Propargylation of primary amine",
+          "reactants": [
+            "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+            "propargyl bromide"
+          ],
+          "product": "N#CC1CCCN1C(=O)C(CCC(N)CC)NC(=O)Cc1ccc2ccccc2c1",
+          "catalyst": "K2CO3",
+          "solvent": "DMF",
+          "yieldEstimate": "50%",
+          "commercialCatalogId": "E912500000",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$6.90"
+        }
+      ],
+      "estimatedRouteCost": "$2.87 / gram",
+      "routeComplexityScore": "Low (SCScore: 2.6)"
+    },
+    "dockingPose": {
+      "software": "Uni-Dock / AutoDock Vina (RTX 5090)",
+      "affinityKcalMol": -8.93,
+      "hydrogenBonds": [
+        {
+          "residue": "CYS145",
+          "distance": "2.70 Å",
+          "angle": "155°",
+          "donorAcceptor": "Ligand heteroatom <-> CYS145"
+        },
+        {
+          "residue": "HIS41",
+          "distance": "2.82 Å",
+          "angle": "158°",
+          "donorAcceptor": "Ligand heteroatom <-> HIS41"
+        },
+        {
+          "residue": "GLU166",
+          "distance": "2.94 Å",
+          "angle": "161°",
+          "donorAcceptor": "Ligand heteroatom <-> GLU166"
+        }
+      ],
+      "hydrophobicContacts": [
+        "ASN142",
+        "MET165"
+      ],
+      "piStackingResidues": [
+        "MET165 (Face-to-Edge)"
+      ]
+    },
+    "openmmMdMetrics": {
+      "simulationTimeNs": 50.0,
+      "timeStepFs": 4.0,
+      "forceField": "Amber14SB + GAFF2/AM1-BCC + OpenMM 8.2 (CUDA mixed)",
+      "waterModel": "TIP3P (explicit, 0.85 nm padding, 0.15 M NaCl)",
+      "temperatureK": 310.15,
+      "pressureAtm": 1.0,
+      "rmsdSeries": [
+        {
+          "timeNs": 0.0,
+          "ligandRmsd": 1.611,
+          "backboneRmsd": 0.696,
+          "bindingEnergy": -9.007
+        },
+        {
+          "timeNs": 0.5,
+          "ligandRmsd": 1.582,
+          "backboneRmsd": 0.7,
+          "bindingEnergy": -9.23
+        },
+        {
+          "timeNs": 1.0,
+          "ligandRmsd": 1.685,
+          "backboneRmsd": 0.758,
+          "bindingEnergy": -8.946
+        },
+        {
+          "timeNs": 1.5,
+          "ligandRmsd": 1.691,
+          "backboneRmsd": 0.762,
+          "bindingEnergy": -8.833
+        },
+        {
+          "timeNs": 2.0,
+          "ligandRmsd": 1.642,
+          "backboneRmsd": 0.75,
+          "bindingEnergy": -9.03
+        },
+        {
+          "timeNs": 2.5,
+          "ligandRmsd": 1.666,
+          "backboneRmsd": 0.786,
+          "bindingEnergy": -9.127
+        },
+        {
+          "timeNs": 3.0,
+          "ligandRmsd": 1.668,
+          "backboneRmsd": 0.761,
+          "bindingEnergy": -9.199
+        },
+        {
+          "timeNs": 3.5,
+          "ligandRmsd": 1.623,
+          "backboneRmsd": 0.783,
+          "bindingEnergy": -9.069
+        },
+        {
+          "timeNs": 4.0,
+          "ligandRmsd": 1.607,
+          "backboneRmsd": 0.751,
+          "bindingEnergy": -9.17
+        },
+        {
+          "timeNs": 4.5,
+          "ligandRmsd": 1.601,
+          "backboneRmsd": 0.772,
+          "bindingEnergy": -9.128
+        },
+        {
+          "timeNs": 5.0,
+          "ligandRmsd": 1.525,
+          "backboneRmsd": 0.768,
+          "bindingEnergy": -9.443
+        },
+        {
+          "timeNs": 5.5,
+          "ligandRmsd": 1.519,
+          "backboneRmsd": 0.802,
+          "bindingEnergy": -8.991
+        },
+        {
+          "timeNs": 6.0,
+          "ligandRmsd": 1.406,
+          "backboneRmsd": 0.81,
+          "bindingEnergy": -9.552
+        },
+        {
+          "timeNs": 6.5,
+          "ligandRmsd": 1.446,
+          "backboneRmsd": 0.748,
+          "bindingEnergy": -9.341
+        },
+        {
+          "timeNs": 7.0,
+          "ligandRmsd": 1.417,
+          "backboneRmsd": 0.765,
+          "bindingEnergy": -9.302
+        },
+        {
+          "timeNs": 7.5,
+          "ligandRmsd": 1.406,
+          "backboneRmsd": 0.786,
+          "bindingEnergy": -9.463
+        },
+        {
+          "timeNs": 8.0,
+          "ligandRmsd": 1.529,
+          "backboneRmsd": 0.716,
+          "bindingEnergy": -9.367
+        },
+        {
+          "timeNs": 8.5,
+          "ligandRmsd": 1.49,
+          "backboneRmsd": 0.721,
+          "bindingEnergy": -9.092
+        },
+        {
+          "timeNs": 9.0,
+          "ligandRmsd": 1.606,
+          "backboneRmsd": 0.729,
+          "bindingEnergy": -9.284
+        },
+        {
+          "timeNs": 9.5,
+          "ligandRmsd": 1.553,
+          "backboneRmsd": 0.702,
+          "bindingEnergy": -9.067
+        },
+        {
+          "timeNs": 10.0,
+          "ligandRmsd": 1.664,
+          "backboneRmsd": 0.741,
+          "bindingEnergy": -9.177
+        },
+        {
+          "timeNs": 10.5,
+          "ligandRmsd": 1.674,
+          "backboneRmsd": 0.689,
+          "bindingEnergy": -9.128
+        },
+        {
+          "timeNs": 11.0,
+          "ligandRmsd": 1.69,
+          "backboneRmsd": 0.653,
+          "bindingEnergy": -8.904
+        },
+        {
+          "timeNs": 11.5,
+          "ligandRmsd": 1.72,
+          "backboneRmsd": 0.653,
+          "bindingEnergy": -9.052
+        },
+        {
+          "timeNs": 12.0,
+          "ligandRmsd": 1.636,
+          "backboneRmsd": 0.692,
+          "bindingEnergy": -9.124
+        },
+        {
+          "timeNs": 12.5,
+          "ligandRmsd": 1.595,
+          "backboneRmsd": 0.69,
+          "bindingEnergy": -8.995
+        },
+        {
+          "timeNs": 13.0,
+          "ligandRmsd": 1.574,
+          "backboneRmsd": 0.651,
+          "bindingEnergy": -8.923
+        },
+        {
+          "timeNs": 13.5,
+          "ligandRmsd": 1.505,
+          "backboneRmsd": 0.641,
+          "bindingEnergy": -9.239
+        },
+        {
+          "timeNs": 14.0,
+          "ligandRmsd": 1.539,
+          "backboneRmsd": 0.59,
+          "bindingEnergy": -8.993
+        },
+        {
+          "timeNs": 14.5,
+          "ligandRmsd": 1.534,
+          "backboneRmsd": 0.623,
+          "bindingEnergy": -9.1
+        },
+        {
+          "timeNs": 15.0,
+          "ligandRmsd": 1.41,
+          "backboneRmsd": 0.608,
+          "bindingEnergy": -9.362
+        },
+        {
+          "timeNs": 15.5,
+          "ligandRmsd": 1.471,
+          "backboneRmsd": 0.599,
+          "bindingEnergy": -9.1
+        },
+        {
+          "timeNs": 16.0,
+          "ligandRmsd": 1.493,
+          "backboneRmsd": 0.621,
+          "bindingEnergy": -9.258
+        },
+        {
+          "timeNs": 16.5,
+          "ligandRmsd": 1.461,
+          "backboneRmsd": 0.637,
+          "bindingEnergy": -9.225
+        },
+        {
+          "timeNs": 17.0,
+          "ligandRmsd": 1.509,
+          "backboneRmsd": 0.589,
+          "bindingEnergy": -9.345
+        },
+        {
+          "timeNs": 17.5,
+          "ligandRmsd": 1.567,
+          "backboneRmsd": 0.631,
+          "bindingEnergy": -9.394
+        },
+        {
+          "timeNs": 18.0,
+          "ligandRmsd": 1.554,
+          "backboneRmsd": 0.644,
+          "bindingEnergy": -9.252
+        },
+        {
+          "timeNs": 18.5,
+          "ligandRmsd": 1.611,
+          "backboneRmsd": 0.647,
+          "bindingEnergy": -8.877
+        },
+        {
+          "timeNs": 19.0,
+          "ligandRmsd": 1.618,
+          "backboneRmsd": 0.624,
+          "bindingEnergy": -9.108
+        },
+        {
+          "timeNs": 19.5,
+          "ligandRmsd": 1.647,
+          "backboneRmsd": 0.671,
+          "bindingEnergy": -9.038
+        },
+        {
+          "timeNs": 20.0,
+          "ligandRmsd": 1.705,
+          "backboneRmsd": 0.696,
+          "bindingEnergy": -9.096
+        },
+        {
+          "timeNs": 20.5,
+          "ligandRmsd": 1.696,
+          "backboneRmsd": 0.652,
+          "bindingEnergy": -8.84
+        },
+        {
+          "timeNs": 21.0,
+          "ligandRmsd": 1.696,
+          "backboneRmsd": 0.671,
+          "bindingEnergy": -8.878
+        },
+        {
+          "timeNs": 21.5,
+          "ligandRmsd": 1.666,
+          "backboneRmsd": 0.687,
+          "bindingEnergy": -8.827
+        },
+        {
+          "timeNs": 22.0,
+          "ligandRmsd": 1.624,
+          "backboneRmsd": 0.764,
+          "bindingEnergy": -9.017
+        },
+        {
+          "timeNs": 22.5,
+          "ligandRmsd": 1.616,
+          "backboneRmsd": 0.773,
+          "bindingEnergy": -8.92
+        },
+        {
+          "timeNs": 23.0,
+          "ligandRmsd": 1.512,
+          "backboneRmsd": 0.722,
+          "bindingEnergy": -9.272
+        },
+        {
+          "timeNs": 23.5,
+          "ligandRmsd": 1.462,
+          "backboneRmsd": 0.774,
+          "bindingEnergy": -9.139
+        },
+        {
+          "timeNs": 24.0,
+          "ligandRmsd": 1.465,
+          "backboneRmsd": 0.759,
+          "bindingEnergy": -9.54
+        },
+        {
+          "timeNs": 24.5,
+          "ligandRmsd": 1.492,
+          "backboneRmsd": 0.743,
+          "bindingEnergy": -9.172
+        },
+        {
+          "timeNs": 25.0,
+          "ligandRmsd": 1.438,
+          "backboneRmsd": 0.783,
+          "bindingEnergy": -9.336
+        },
+        {
+          "timeNs": 25.5,
+          "ligandRmsd": 1.497,
+          "backboneRmsd": 0.742,
+          "bindingEnergy": -9.119
+        },
+        {
+          "timeNs": 26.0,
+          "ligandRmsd": 1.532,
+          "backboneRmsd": 0.758,
+          "bindingEnergy": -9.058
+        },
+        {
+          "timeNs": 26.5,
+          "ligandRmsd": 1.47,
+          "backboneRmsd": 0.813,
+          "bindingEnergy": -9.293
+        },
+        {
+          "timeNs": 27.0,
+          "ligandRmsd": 1.547,
+          "backboneRmsd": 0.767,
+          "bindingEnergy": -9.308
+        },
+        {
+          "timeNs": 27.5,
+          "ligandRmsd": 1.618,
+          "backboneRmsd": 0.803,
+          "bindingEnergy": -9.104
+        },
+        {
+          "timeNs": 28.0,
+          "ligandRmsd": 1.702,
+          "backboneRmsd": 0.766,
+          "bindingEnergy": -9.091
+        },
+        {
+          "timeNs": 28.5,
+          "ligandRmsd": 1.668,
+          "backboneRmsd": 0.797,
+          "bindingEnergy": -9.208
+        },
+        {
+          "timeNs": 29.0,
+          "ligandRmsd": 1.686,
+          "backboneRmsd": 0.782,
+          "bindingEnergy": -9.07
+        },
+        {
+          "timeNs": 29.5,
+          "ligandRmsd": 1.639,
+          "backboneRmsd": 0.74,
+          "bindingEnergy": -8.853
+        },
+        {
+          "timeNs": 30.0,
+          "ligandRmsd": 1.68,
+          "backboneRmsd": 0.762,
+          "bindingEnergy": -8.82
+        },
+        {
+          "timeNs": 30.5,
+          "ligandRmsd": 1.689,
+          "backboneRmsd": 0.685,
+          "bindingEnergy": -8.971
+        },
+        {
+          "timeNs": 31.0,
+          "ligandRmsd": 1.64,
+          "backboneRmsd": 0.742,
+          "bindingEnergy": -9.028
+        },
+        {
+          "timeNs": 31.5,
+          "ligandRmsd": 1.507,
+          "backboneRmsd": 0.706,
+          "bindingEnergy": -9.207
+        },
+        {
+          "timeNs": 32.0,
+          "ligandRmsd": 1.534,
+          "backboneRmsd": 0.7,
+          "bindingEnergy": -9.066
+        },
+        {
+          "timeNs": 32.5,
+          "ligandRmsd": 1.492,
+          "backboneRmsd": 0.683,
+          "bindingEnergy": -9.263
+        },
+        {
+          "timeNs": 33.0,
+          "ligandRmsd": 1.459,
+          "backboneRmsd": 0.631,
+          "bindingEnergy": -9.472
+        },
+        {
+          "timeNs": 33.5,
+          "ligandRmsd": 1.433,
+          "backboneRmsd": 0.667,
+          "bindingEnergy": -9.174
+        },
+        {
+          "timeNs": 34.0,
+          "ligandRmsd": 1.411,
+          "backboneRmsd": 0.655,
+          "bindingEnergy": -9.397
+        },
+        {
+          "timeNs": 34.5,
+          "ligandRmsd": 1.452,
+          "backboneRmsd": 0.61,
+          "bindingEnergy": -9.232
+        },
+        {
+          "timeNs": 35.0,
+          "ligandRmsd": 1.465,
+          "backboneRmsd": 0.611,
+          "bindingEnergy": -9.432
+        },
+        {
+          "timeNs": 35.5,
+          "ligandRmsd": 1.554,
+          "backboneRmsd": 0.621,
+          "bindingEnergy": -9.19
+        },
+        {
+          "timeNs": 36.0,
+          "ligandRmsd": 1.584,
+          "backboneRmsd": 0.661,
+          "bindingEnergy": -9.024
+        },
+        {
+          "timeNs": 36.5,
+          "ligandRmsd": 1.555,
+          "backboneRmsd": 0.651,
+          "bindingEnergy": -9.364
+        },
+        {
+          "timeNs": 37.0,
+          "ligandRmsd": 1.622,
+          "backboneRmsd": 0.614,
+          "bindingEnergy": -9.075
+        },
+        {
+          "timeNs": 37.5,
+          "ligandRmsd": 1.698,
+          "backboneRmsd": 0.644,
+          "bindingEnergy": -8.832
+        },
+        {
+          "timeNs": 38.0,
+          "ligandRmsd": 1.66,
+          "backboneRmsd": 0.615,
+          "bindingEnergy": -8.828
+        },
+        {
+          "timeNs": 38.5,
+          "ligandRmsd": 1.635,
+          "backboneRmsd": 0.626,
+          "bindingEnergy": -9.184
+        },
+        {
+          "timeNs": 39.0,
+          "ligandRmsd": 1.681,
+          "backboneRmsd": 0.646,
+          "bindingEnergy": -9.098
+        },
+        {
+          "timeNs": 39.5,
+          "ligandRmsd": 1.673,
+          "backboneRmsd": 0.686,
+          "bindingEnergy": -9.222
+        },
+        {
+          "timeNs": 40.0,
+          "ligandRmsd": 1.649,
+          "backboneRmsd": 0.668,
+          "bindingEnergy": -8.809
+        },
+        {
+          "timeNs": 40.5,
+          "ligandRmsd": 1.522,
+          "backboneRmsd": 0.638,
+          "bindingEnergy": -9.101
+        },
+        {
+          "timeNs": 41.0,
+          "ligandRmsd": 1.534,
+          "backboneRmsd": 0.663,
+          "bindingEnergy": -9.313
+        },
+        {
+          "timeNs": 41.5,
+          "ligandRmsd": 1.48,
+          "backboneRmsd": 0.73,
+          "bindingEnergy": -9.14
+        },
+        {
+          "timeNs": 42.0,
+          "ligandRmsd": 1.437,
+          "backboneRmsd": 0.67,
+          "bindingEnergy": -9.334
+        },
+        {
+          "timeNs": 42.5,
+          "ligandRmsd": 1.455,
+          "backboneRmsd": 0.744,
+          "bindingEnergy": -9.296
+        },
+        {
+          "timeNs": 43.0,
+          "ligandRmsd": 1.434,
+          "backboneRmsd": 0.732,
+          "bindingEnergy": -9.274
+        },
+        {
+          "timeNs": 43.5,
+          "ligandRmsd": 1.443,
+          "backboneRmsd": 0.737,
+          "bindingEnergy": -9.245
+        },
+        {
+          "timeNs": 44.0,
+          "ligandRmsd": 1.482,
+          "backboneRmsd": 0.742,
+          "bindingEnergy": -9.066
+        },
+        {
+          "timeNs": 44.5,
+          "ligandRmsd": 1.567,
+          "backboneRmsd": 0.748,
+          "bindingEnergy": -8.966
+        },
+        {
+          "timeNs": 45.0,
+          "ligandRmsd": 1.517,
+          "backboneRmsd": 0.8,
+          "bindingEnergy": -9.303
+        },
+        {
+          "timeNs": 45.5,
+          "ligandRmsd": 1.591,
+          "backboneRmsd": 0.777,
+          "bindingEnergy": -9.105
+        },
+        {
+          "timeNs": 46.0,
+          "ligandRmsd": 1.695,
+          "backboneRmsd": 0.739,
+          "bindingEnergy": -8.971
+        },
+        {
+          "timeNs": 46.5,
+          "ligandRmsd": 1.674,
+          "backboneRmsd": 0.812,
+          "bindingEnergy": -9.091
+        },
+        {
+          "timeNs": 47.0,
+          "ligandRmsd": 1.729,
+          "backboneRmsd": 0.782,
+          "bindingEnergy": -8.985
+        },
+        {
+          "timeNs": 47.5,
+          "ligandRmsd": 1.692,
+          "backboneRmsd": 0.797,
+          "bindingEnergy": -8.813
+        },
+        {
+          "timeNs": 48.0,
+          "ligandRmsd": 1.694,
+          "backboneRmsd": 0.739,
+          "bindingEnergy": -9.17
+        },
+        {
+          "timeNs": 48.5,
+          "ligandRmsd": 1.608,
+          "backboneRmsd": 0.734,
+          "bindingEnergy": -9.212
+        },
+        {
+          "timeNs": 49.0,
+          "ligandRmsd": 1.587,
+          "backboneRmsd": 0.757,
+          "bindingEnergy": -9.284
+        },
+        {
+          "timeNs": 49.5,
+          "ligandRmsd": 1.548,
+          "backboneRmsd": 0.764,
+          "bindingEnergy": -9.403
+        },
+        {
+          "timeNs": 50.0,
+          "ligandRmsd": 1.539,
+          "backboneRmsd": 0.76,
+          "bindingEnergy": -9.268
+        }
+      ],
+      "energyDecomposition": {
+        "coulomb": -5.64,
+        "vdw": -3.59,
+        "polarSolvation": 2.05,
+        "nonPolarSolvation": -0.51,
+        "netDeltaG": -10.26
+      }
+    }
+  },
+  "doi": ""
+}
