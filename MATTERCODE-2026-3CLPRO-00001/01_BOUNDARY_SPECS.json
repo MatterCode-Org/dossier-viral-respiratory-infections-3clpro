@@ -1,0 +1,24 @@
+{
+  "targetName": "3CLpro",
+  "targetPdb": "7MGS",
+  "bindingPocketCoords": {
+    "x": 14.2,
+    "y": -9.8,
+    "z": 27.5
+  },
+  "dockingGridBoxDims": {
+    "dx": 22.0,
+    "dy": 22.0,
+    "dz": 22.0
+  },
+  "keyPocketResidues": [
+    "CYS145",
+    "HIS41",
+    "GLU166",
+    "ASN142",
+    "MET165"
+  ],
+  "biochemConstraints": "MW 250-600; P1 glutamine mimic preferred; synthetic steps <=6",
+  "pharmacophoreRules": "S1 pocket GLU166 H-bond; catalytic dyad proximity CYS145/HIS41",
+  "designMethod": "Structure-Based Deterministic SOP (MatterCode)"
+}
